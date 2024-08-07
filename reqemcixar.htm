@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="ntc"></h1>
+    <script>
+        const reqemler = [1, 2, 3, 4, 3, 4, 3, 3, 3, 2, 5, 6, 3, 7];
+        const ntc = document.getElementById('ntc')
+        const tekrareded = (reqemler) => {
+            const ededtekrar = [];
+            for (let i = 0; i < reqemler.length; i++) {
+
+                for (let j = 0; j < reqemler.length; j++) {
+                    i!== j && reqemler[i] === reqemler[j] ?
+                        ededtekrar.includes(reqemler[i]) ? 0 :
+                            ededtekrar.push(reqemler[i]) : 0
+                }
+            }
+            return ededtekrar
+        }
+console.log(tekrareded(reqemler))
+ntc.innerHTML=tekrareded(reqemler)
+    </script>
+</body>
+
+</html>

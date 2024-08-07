@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const arr=[]
+        for(let i=0;i<=1000;i++){
+            let reqem=0
+            let deyer=i.toString()
+            for(let j=0;j<deyer.length;j++){
+                reqem+=(+deyer[j])**deyer.length 
+             if(i==reqem){
+                arr.push(i);
+             }
+
+
+            }
+        }
+        console.log(arr)
+    </script>
+</body>
+</html>
